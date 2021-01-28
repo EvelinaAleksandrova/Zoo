@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Programming/C++/Other Programing/Zoo/main.cpp" "D:/Programming/C++/Other Programing/Zoo/cmake-build-debug/CMakeFiles/Zoo.dir/main.cpp.obj"
+  "D:/ZooRepo/Zoo/main.cpp" "D:/ZooRepo/Zoo/cmake-build-debug/CMakeFiles/Zoo.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

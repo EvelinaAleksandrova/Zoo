@@ -7,10 +7,6 @@ using namespace std;
 int toLower(int c) {
     return std::tolower(c);
 }
-// The number of animals is determined by the user
-// The user should be able to specify the type of animal for the current position
-// The user should be able to manually feed or pet all of the animals
-// When "Exit" is typed the program should quit
 
 class Animal {
 protected:
@@ -48,7 +44,7 @@ public:
     }
 
     virtual void currentEnergy() {
-        cout << "Panther current energy of Panther: " << energy << endl;
+        cout << "Panther current energy: " << energy << endl;
     }
 
     virtual void sound() {
@@ -86,7 +82,7 @@ public:
     }
 
     virtual void currentEnergy() {
-        cout << "Wolf current energy of Wolf: " << energy << endl;
+        cout << "Wolf current energy: " << energy << endl;
     }
 
     virtual void sound() {
@@ -123,7 +119,7 @@ public:
     }
 
     virtual void currentEnergy() {
-        cout << "Tiger current energy of Tiger: " << energy << endl;
+        cout << "Tiger current energy: " << energy << endl;
     }
 
     virtual void sound() {
@@ -160,7 +156,7 @@ public:
     }
 
     virtual void currentEnergy() {
-        cout << "Snake current energy of Snake: " << energy << endl;
+        cout << "Snake current energy: " << energy << endl;
     }
 
     virtual void sound() {
@@ -230,7 +226,7 @@ public:
 int main() {
     string nameOfAnimal;
 
-    cout << "Enter number of animal: " << endl;
+    cout << "Enter number of animals: " << endl;
     int size = 0;
     cin >> size;
 
@@ -277,7 +273,7 @@ int main() {
             ptrAnimal[i]->currentEnergy();
         }
         cout << "------------------------------------------" << endl;
-        cout << "Do you want to Feed animals or Pet them or hear their Sound?" << endl;
+        cout << "Do you want to Feed animals or Pet them or hear their Sound? If, no enter EXIT to close the program." << endl;
         cin >> decision;
 
         if (decision == "Feed") {
